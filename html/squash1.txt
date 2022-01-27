@@ -1,0 +1,135 @@
+#define main_page_html  "<!DOCTYPE html>" \
+"<html lang='en'>" \
+"<head>" \
+"<meta charset='UTF-8'>" \
+"<title>Wifi Setup</title>" \
+"</head>" \
+"<style>" \
+"body {" \
+"position: relative;" \
+"top: 0;" \
+"left: 0;" \
+"color: white;" \
+"background-color: transparent;" \
+"height: 100vh;" \
+"width: 100vw;" \
+"margin: 0;" \
+"padding: 0;" \
+"z-index: 0;" \
+"}" \
+".flexContainer {" \
+"background-image: linear-gradient(180deg, #00008B, black);" \
+"z-index: 1;" \
+"position: relative;" \
+"margin: 0;" \
+"padding: 0;" \
+"width: 100%;" \
+"height: 100%;" \
+"display: flex;" \
+"text-align: center;" \
+"align-items: center;" \
+"align-content: center;" \
+"flex-wrap: nowrap;" \
+"flex-direction: column;" \
+"overflow-y: scroll;" \
+"font-weight: bold;" \
+"}" \
+".title {" \
+"padding: 10px;" \
+"font-size: x-large;" \
+"}" \
+".subTitle {" \
+"padding: 5px;" \
+"font-size: large;" \
+"}" \
+".subFlexBlock {" \
+"z-index: 2;" \
+"font-size: large;" \
+"position: relative;" \
+"left: 0;" \
+"margin: 0;" \
+"margin-bottom: 10px;" \
+"padding: 10px;" \
+"width: 100%;" \
+"max-width: 300px;" \
+"height: auto;" \
+"display: flex;" \
+"flex-direction: column;" \
+"text-align: center;" \
+"align-items: center;" \
+"align-content: center;" \
+"}" \
+".greenBorder {" \
+"background-color: black;" \
+"color: white;" \
+"width: 90%;" \
+"border: #FAF0E6 solid 6px;" \
+"border-radius: 20px;" \
+"}" \
+".whiteBorder {" \
+"background-color: #818181;" \
+"color: #18453B;" \
+"width: 80%;" \
+"border: #ffffff solid 6px;" \
+"border-radius: 20px;" \
+"}" \
+".blackBorder {" \
+"background-color: #18453B;" \
+"color: white;" \
+"width: 85%;" \
+"border: #000000 solid 6px;" \
+"border-radius: 20px;" \
+"}" \
+".textBlocks {" \
+"font-size: large;" \
+"text-align: center;" \
+"align-content: center;" \
+"align-items: center;" \
+"padding: 2px;" \
+"margin: 0;" \
+"}" \
+"button {" \
+"margin: 0;" \
+"font-size: large;" \
+"padding: 5px 10px 5px 10px;" \
+"color: #b4b4b4;" \
+"background-color: black;" \
+"border-radius: 10px;" \
+"border: #18453B solid 4px;" \
+"text-decoration: underline #b4b4b4;" \
+"}" \
+".greyText {" \
+"color: #b4b4b4;" \
+"}" \
+"</style>" \
+"<body>" \
+"<div class='flexContainer'>" \
+"<div class='title greyText'>LED Light Strip Controller</div>" \
+"<div id='date'></div>" \
+"<script type='text/JavaScript' defer>" \
+"let a = new Date();" \
+"let b = String(a).split(' GMT')[0];" \
+"document.getElementById('date').innerHTML = `${b}`;" \
+"//console.log(b);" \
+"</script>" \
+"<div class='subFlexBlock greenBorder'>" \
+"<p class='textBlocks greyText'>STATUS</p>" \
+"<p class='textBlocks'>current wifi AP SSID: &nbsp <b> REPLACE_WITH_wifi_ssid </b></p>" \
+"</div>" \
+"<div class='subFlexBlock greenBorder'>" \
+"<p class='textBlocks greyText'>CONNECT TO WIFI</p>" \
+"<p class='textBlocks'>Add a New Network</p>" \
+"</br>" \
+"<div style='display:flex;flex-wrap: wrap;flex-direction: row; justify-content: space-around;'>" \
+"<form action='/input' method='POST'> Wifi ssid :<br>" \
+"<input type='text' name='wifi SSID' value=''>" \
+"<br> Wifi password:<br>" \
+"<input type='password' name='password' value=''>" \
+"<br><br>" \
+"<input type='submit' value='Submit'>" \
+"</form>" \
+"</div>" \
+"</div>" \
+"</div>" \
+"</body>" \
+"</html>" 
