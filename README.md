@@ -49,3 +49,4 @@ RCSwitch: https://github.com/sui77/rc-switch
 Cheers, Mark
 
 ![screenShot](https://github.com/wottreng/RF-controlled-strip-lights/blob/main/pics/screenshot.png)
+![ledLights](https://github.com/wottreng/RF-controlled-strip-lights/blob/main/pics/ledlights.jpg)
