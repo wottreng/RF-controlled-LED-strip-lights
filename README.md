@@ -3,6 +3,7 @@ I reverse engineered RF controlled strip lights so that they can be controlled o
 
 ## How to Make It Work
 * compile and load onto nodeMCU or just load binary firmware onto MCU
+* wire up 433Mhz transmitter and motion sensor(optional), see CONNECTIONS below
 * when first boot occurs, it will create an open access point "light_controller"
 * connect to AP and navigate to http://192.168.10.1/ 
 * scroll down to "Change Wifi Access Point" and click "Wifi Setup"
