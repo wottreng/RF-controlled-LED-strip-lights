@@ -41,7 +41,7 @@ ESP8266 nodeMCU: https://components101.com/development-boards/nodemcu-esp8266-pi
 
 SOFTWARE:
 Compiled on PlatformIO https://platformio.org/ \
-compiled firmware location: /.pio/build/esp01/firmware.bin
+compiled firmware location: /src
 
 NOTE WORTHY LIBS: \
 RCSwitch: https://github.com/sui77/rc-switch
