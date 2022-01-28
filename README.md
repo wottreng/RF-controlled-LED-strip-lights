@@ -1,5 +1,5 @@
-# RF-controlled-strip-lights
-I reverse engineered RF controlled strip lights so that they can be controlled over wifi with a browser or/and integrated with IOT device controllers via API
+# Control RF LED strip lights via ESP8266
+I reverse engineered RF controlled strip lights so that they can be controlled over WiFi with a browser or/and integrated with IOT device controllers via API
 
 ## How to Make It Work
 * compile and load onto nodeMCU or just load binary firmware onto MCU
