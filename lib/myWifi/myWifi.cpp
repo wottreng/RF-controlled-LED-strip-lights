@@ -105,7 +105,8 @@ void myWifi_c::connectWifi( bool New_Connection)
                   digitalWrite(getLEDpin(), HIGH); // off
                 #endif
 
-            } else if (conStatus != 3 && x == maxTry) {
+            } else if ((conStatus != 3 && x == maxTry) || WIFI_SSID == "---") {
+                x = 100; // break loop
                 // access point mode
                 WiFi.mode(WIFI_AP); //WIFI_AP
                 WiFi.setOutputPower(16); // 20.5 -> 0 in .25 increments

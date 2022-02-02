@@ -38,14 +38,13 @@ String EEPROM_tools_c::read_eeprom(int address) {
   String data;
   uint8_t a;
     if(dataLength > max_data_length){
-      a = 0;
-      data += char(a);
-  }else{
-    for (int i = 0; i < dataLength; i++) {
-      a = EEPROM.read(address + 1 + i);
-      data += char(a);
+        return "---";
+    } else {
+        for (int i = 0; i < dataLength; i++) {
+            a = EEPROM.read(address + 1 + i);
+            data += char(a);
+        }
     }
-  }
   return data;
   }
   
